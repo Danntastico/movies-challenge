@@ -1,3 +1,6 @@
+/**
+ * The Movie Database API
+ */
 export interface TMDBImageInformation {
     aspect_ratio: number;
     file_path: string;
@@ -36,4 +39,59 @@ export interface TMDBSearchMovieResponse {
     total_results: number;
     total_pages: number;
     results: Array<TMDBMovieInformation>;
+}
+
+export interface TMDBGetMovieResponse {
+    homepage: string;
+    id: number;
+    imdb_id: number;
+    original_language: string;
+    original_title: string;
+    overview: string;
+    popularity: number;
+    poster_path: string;
+    release_date: string;
+    title: string;
+    vote_average: string;
+    vote_count: string;
+}
+
+/**
+ * DataSet
+ */
+export interface DatasetMovies {
+    movieId: number;
+    title: string;
+    genres: string;
+}
+
+export interface DatasetRatings {
+    userId: number;
+    movieId: number;
+    rating: number;
+    timestamp: number;
+}
+
+export interface DatasetGenomeTags {
+    tagId: number;
+    tag: string;
+}
+
+export interface DatasetTags {
+    userId: number;
+    movieId: number;
+    tag: string;
+    timestamp: number;
+}
+
+export interface DatasetGenomeScores {
+    movieId: number;
+    tagId: number;
+    relevance: number;
+}
+
+export interface DatasetLinks {
+    movieId: number;
+    imdbId: number;
+    tmdbId: number;
 }
