@@ -24,7 +24,6 @@ export const Button: FunctionComponent<ButtonProps> = ({
                 customHoverColor={customHoverColor} 
                 customTextColor={customTextColor}
                 customTextHoverColor={customTextHoverColor}
-                textLabel
             >
                 { textLabel }
             </ButtonComp>
