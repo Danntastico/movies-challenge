@@ -1,12 +1,12 @@
 import { API_KEY, MAIN_URL} from 'utils/constants';
-import { TMDBMovieImages } from 'utils/types';
+import { TMDBMovieImages, TMDBSearchMovieResponse } from 'utils/types';
 
 class ApiTheMovieDB {
     private apiURL: string;
     private apiKey: string;
-    private language: string | undefined = 'en-US';
+    language: string | undefined;
 
-    constructor( url:string, apiKey: string, language?:string ) {
+    constructor( url:string, apiKey: string, language:string = 'en-US' ) {
         this.apiURL = url; 
         this.apiKey = apiKey;
         this.language = language;
@@ -15,11 +15,10 @@ class ApiTheMovieDB {
     async searchMovies(query:string){
         try {
             const response = await fetch(
-                `${this.apiURL}?api_key=${this.apiKey}&language=${this.language}&page=1&query=${query}`
+                `${this.apiURL}/search/movie?api_key=${this.apiKey}&language=${this.language}&page=1&query=${query}`
                 );
-            const {results} = await response.json();
-
-            return results
+            const { results }: TMDBSearchMovieResponse = await response.json();
+            return results;
         } catch (error) {
             console.log(error);
         }
@@ -28,7 +27,7 @@ class ApiTheMovieDB {
     async getMoviePosters(movieID: string){
         try {
             const response = await fetch(
-                `${this.apiURL}/${movieID}/images?api_key=${this.apiKey}`
+                `${this.apiURL}/movie/${movieID}/images?api_key=${this.apiKey}`
             )
             const { posters }: TMDBMovieImages = await response.json();
             return posters;
