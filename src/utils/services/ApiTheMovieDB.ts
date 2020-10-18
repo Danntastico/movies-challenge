@@ -36,6 +36,19 @@ class ApiTheMovieDB {
         }
     }
 
+    async getMovie(movieID: string){
+        try {
+            const response =  await fetch(
+                `${this.apiURL}/movie/${movieID}?api_key=${this.apiKey}`
+            );
+
+            const movie = response.json();
+            return movie;
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
 }
 
 export const ApiTMDB = new ApiTheMovieDB(MAIN_URL, API_KEY);

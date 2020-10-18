@@ -1,6 +1,6 @@
 import { ApiTMDB } from 'utils/services/ApiTheMovieDB';
 import '@testing-library/jest-dom';
-import { TMDBImageInformation, TMDBMovieInformation } from 'utils/types';
+import { TMDBGetMovieResponse, TMDBImageInformation, TMDBMovieInformation } from 'utils/types';
 
 describe('Unit test to the ApiTheMovieDB', () => {
     const api = ApiTMDB;
@@ -27,5 +27,12 @@ describe('Unit test to the ApiTheMovieDB', () => {
         expect(typeof searchMovies[0].title).toBe('string');
         expect(typeof searchMovies[0].video).toBe('boolean');
         expect(typeof searchMovies[0].id).toBe('number');
+    });
+
+    test('Testing response from getMovie()s method', async () => {
+        const getMovie = await api.getMovie('157336') as TMDBGetMovieResponse;
+
+        expect(typeof getMovie.title).toBe('string');
+        expect(typeof getMovie.id).toBe('number');
     });
 });
