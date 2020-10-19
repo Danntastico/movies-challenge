@@ -10,6 +10,7 @@ export const FormControlStyled = styled(FormControl)`
     border: none;
     border-bottom: 1.5px solid #d8a200;
     border-radius: 0;
+    color: #FFFFFF;
 
     @media screen and (max-width: 613px) {
         width: 65%;
