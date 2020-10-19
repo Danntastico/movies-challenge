@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { ButtonComp } from './ButtonStyles';
 interface ButtonProps {
     onClick: () => void;
-    textLabel: string;
+    children: any;
     customColor?:string;
     customHoverColor?: string;
     customTextColor?:string;
@@ -11,7 +11,7 @@ interface ButtonProps {
 
 export const Button: FunctionComponent<ButtonProps> = ({ 
         onClick, 
-        textLabel,
+        children,
         customColor, 
         customHoverColor, 
         customTextColor, 
@@ -25,7 +25,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
                 customTextColor={customTextColor}
                 customTextHoverColor={customTextHoverColor}
             >
-                { textLabel }
+                { children }
             </ButtonComp>
         </>
     )

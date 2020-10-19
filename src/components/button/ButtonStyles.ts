@@ -1,5 +1,5 @@
 import  styled from 'styled-components';
-
+import { Button } from 'react-bootstrap'
 interface StyledButtonProps {
     customColor?:string;
     customHoverColor?: string;
@@ -7,11 +7,15 @@ interface StyledButtonProps {
     customTextHoverColor?: string;
 }
 
-export const ButtonComp = styled.button<StyledButtonProps>`
-    background-color: ${({customColor}) => customColor ? customColor: "yellow" };
-    border: none;
-    & > :hover {
-        background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor: "yellow" };
+export const ButtonComp = styled(Button)<StyledButtonProps>`
+    background-color: ${({customColor}) => customColor ? customColor : "transparent"};
+
+    &:hover {
+        background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor : "transparent"};
+    }
+
+    @media screen and (max-width: 613px) {
+        padding: 0 1px 0 1px;
     }
 `
 
