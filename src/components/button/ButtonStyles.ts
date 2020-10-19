@@ -9,6 +9,7 @@ interface StyledButtonProps {
 
 export const ButtonComp = styled(Button)<StyledButtonProps>`
     background-color: ${({customColor}) => customColor ? customColor : "transparent"};
+    border: transparent;
 
     &:hover {
         background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor : "transparent"};
