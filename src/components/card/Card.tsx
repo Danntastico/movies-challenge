@@ -11,8 +11,7 @@ export const Cards: FunctionComponent = () => {
                             <CardBody >
                                 <CardTitle> 1 </CardTitle>
                                 <CardText> Calificación </CardText>
-                                <CardFooter>
-                                    text-muted">2 days ago
+                                <CardFooter>2 days ago
                                 </CardFooter> 
                             </CardBody>
                         </CardStyled>
