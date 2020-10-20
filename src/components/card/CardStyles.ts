@@ -66,10 +66,11 @@ export const CardBody = styled(Card.Body)`
 `;
 
 export const CardTitle = styled(Card.Title)`
-    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size  : 19px;
+    font-size  : 25px;
     width      : 35px;
+    padding-left: 12px;
     border-top-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     border: 1px solid #d8a200;
@@ -77,12 +78,14 @@ export const CardTitle = styled(Card.Title)`
 `;
 
 export const CardText = styled(Card.Text)`
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;
 `;
 
-export const CardFooter = styled(Card.Text)`
+export const CardFooter = styled(Card.Footer)`
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;
