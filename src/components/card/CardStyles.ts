@@ -10,12 +10,12 @@ export const ColStyled = styled(Col)`
 
 export const CardStyled = styled(Card)`
     cursor       : pointer;
-    margin-top   : 15px;
-    margin-bottom: 15px;
     border: 1px solid #d8a200;
     border-radius: 20px;
     box-shadow: 0 0.5px 5px 0 #d8a200, 0 0.5px 5px 0 #d8a200;
     background-image: url('https://picsum.photos/600/300/?random');
+    margin-top   : 15px;
+    margin-bottom: 15px;
 
     &:hover {
         transform : scale(1.03);
@@ -67,14 +67,14 @@ export const CardBody = styled(Card.Body)`
 `;
 
 export const CardTitle = styled(Card.Title)`
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;
 `;
 
 export const CardText = styled(Card.Text)`
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;

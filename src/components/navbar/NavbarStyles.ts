@@ -11,6 +11,13 @@ export const FormControlStyled = styled(FormControl)`
     border-bottom: 1.5px solid #d8a200;
     border-radius: 0;
     color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1; /* Firefox */
+        font-size: 19px;
+    }
 
     @media screen and (max-width: 613px) {
         width: 65%;
@@ -25,9 +32,14 @@ export const BrandStyled = styled(NavbarBrand)`
 `;
 
 export const NavbarStyled = styled(Navbar)`
-    background-color: #111111;
+    background-color: black;
     border-bottom: .05em solid rgba(216,162,0,0.65);
     justify-content: space-between;
+
+    input.yourclassname::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 
     @media(min-width: 768px){ 
     }
