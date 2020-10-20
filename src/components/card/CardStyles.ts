@@ -50,10 +50,9 @@ export const CardStyled = styled(Card)`
 
 export const CardBody = styled(Card.Body)`
     width: 100%;
-    padding-top: 90px;
-    padding-bottom: 90px;
     color: #ffff;
     border-radius: 20px;
+    padding: 0;
 
     background: rgba(254,254,254,0);
     background: -moz-linear-gradient(top, rgba(254,254,254,0) 0%, rgba(70,70,70,0) 62%, rgba(52,52,52,0.85) 68%, rgba(28,28,28,0.85) 76%, rgba(0,0,0,0.85) 100%);
@@ -67,14 +66,23 @@ export const CardBody = styled(Card.Body)`
 `;
 
 export const CardTitle = styled(Card.Title)`
-    font-family: 'Noto Sans JP', sans-serif;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size  : 19px;
+    width      : 35px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border: 1px solid #d8a200;
+    background-color: rgba(49, 44, 25, 0.7);
+`;
+
+export const CardText = styled(Card.Text)`
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;
 `;
 
-export const CardText = styled(Card.Text)`
-    font-family: 'Noto Sans JP', sans-serif;
+export const CardFooter = styled(Card.Text)`
     font-weight: 500;
     font-size  : 19px;
     width      : min-content;
