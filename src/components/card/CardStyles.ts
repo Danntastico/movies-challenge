@@ -1,8 +1,12 @@
 import { Row, Col, Card } from 'react-bootstrap';
-import  styled from 'styled-components';
+import styled from 'styled-components';
 
 export const RowStyled = styled(Row)`
     margin: 8px 40px 20px 40px;
+
+    @media screen and (max-width: 768px) {
+        margin: 8px 30px 20px 30px;
+    }
 `;
 
 export const ColStyled = styled(Col)`
@@ -71,24 +75,73 @@ export const CardTitle = styled(Card.Title)`
     font-size  : 25px;
     width      : 35px;
     padding-left: 12px;
+    margin-bottom: 18vh;
     border-top-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     border: 1px solid #d8a200;
     background-color: rgba(49, 44, 25, 0.7);
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 150px;
+    }
+`;
+
+export const CardRating = styled(Card.Text)`
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size  : 19px;
+    width      : 50px;
+    margin-left: 75%;
+    color: #f6be0e;
+    background-color: rgba(38, 38, 38, 0.75);
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #d8a200;
+    text-align: center;
 `;
 
 export const CardText = styled(Card.Text)`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
-    width      : min-content;
+    width      : 85%;
+    margin: auto;
+
+    
+    @media screen and (max-width: 768px) {
+        font-size  : 15px;
+    }
 `;
 
 export const CardFooter = styled(Card.Footer)`
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid #69614C;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 19px;
-    width      : min-content;
+    color: #225a7d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+`;
+
+export const CardParagraph = styled(Card.Text)`
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size  : 10px;
+    width      : 40%;
+    padding: 4px 0px 4px 0px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: #212121;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    text-align: center;
 `;
 
 
