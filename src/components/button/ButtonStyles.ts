@@ -1,13 +1,7 @@
 import  styled from 'styled-components';
 import { Button } from 'react-bootstrap'
-interface StyledButtonProps {
-    customColor?:string;
-    customHoverColor?: string;
-    customTextColor?:string;
-    customTextHoverColor?: string;
-}
 
-export const ButtonComp = styled(Button)<StyledButtonProps>`
+export const ButtonComp = styled(Button)`
     background-color: ${({customColor}) => customColor ? customColor : "transparent"};
     border: transparent;
 
