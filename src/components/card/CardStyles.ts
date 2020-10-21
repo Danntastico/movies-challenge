@@ -1,25 +1,40 @@
-import { Row, Col, Card } from 'react-bootstrap';
+import { Col, Card } from 'react-bootstrap';
 import styled from 'styled-components';
 
-export const RowStyled = styled(Row)`
-    margin: 8px 40px 20px 40px;
+export const CardHover = styled('span')`
+    display: none;
+    width: 95%;
+    height: fit-content;
+    margin: -200px auto 0 auto;
+    padding-left: 5%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size  : 11.5px;
 
     @media screen and (max-width: 768px) {
-        margin: 8px 30px 20px 30px;
+        font-size  : 10px;
+        width: 97%;
+        padding-left: 3%;
+        margin: -180px auto 0 auto;
     }
 `;
 
 export const ColStyled = styled(Col)`
+    display: flex;
+    align-items: stretch;
 `;
 
 export const CardStyled = styled(Card)`
-    cursor       : pointer;
-    margin-top   : 15px;
-    margin-bottom: 15px;
-    border: 1px solid #d8a200;
-    border-radius: 20px;
-    box-shadow: 0 0.5px 5px 0 #d8a200, 0 0.5px 5px 0 #d8a200;
-    background-image: url('https://picsum.photos/600/300/?random');
+    z-index         : 1;
+    width           : 100%;
+    cursor          : pointer;
+    margin-top      : 15px;
+    margin-bottom   : 15px;
+    border          : 1px solid #d8a200;
+    border-radius   : 20px;
+    box-shadow      : 0 0.5px 5px 0 #d8a200, 0 0.5px 5px 0 #d8a200;
+    background-image: url('https://picsum.photos/600/500/?random');
 
     &:hover {
         transform : scale(1.03);
@@ -27,20 +42,27 @@ export const CardStyled = styled(Card)`
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    &:hover span{
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+
     &::before, &::after {
-        position  : absolute;
-        top       : 0;
-        right     : 0;
-        bottom    : 0;
-        left      : 0;
-        transform : scale3d(0, 0, 1);
-        transition: transform .1s ease 0s;
-        background: rgba(255, 255, 255, 0.03);
-        content   : '';
+        position     : absolute;
+        top          : 0;
+        right        : 0;
+        bottom       : 0;
+        left         : 0;
+        transform    : scale3d(0, 0, 1);
+        transition   : transform .1s ease 0s;
+        border-radius: 20px;
+        background   : rgba(0, 0, 0, 0.68);
+        content      : '';
     }
 
     &::before {
-    transform-origin: left top;
+        transform-origin: left top;
     }
 
     &::after {
@@ -48,7 +70,7 @@ export const CardStyled = styled(Card)`
     }
 
     &:hover::before, &:hover::after, &:focus::before, &:focus::after {
-    transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 `;
 
@@ -67,15 +89,16 @@ export const CardBody = styled(Card.Body)`
     background: linear-gradient(to bottom, rgba(254,254,254,0) 0%, rgba(70,70,70,0) 62%, rgba(52,52,52,0.85) 68%, rgba(28,28,28,0.85) 76%, rgba(0,0,0,0.85) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#000000', GradientType=0 );
 
+   
 `;
 
 export const CardTitle = styled(Card.Title)`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 25px;
-    width      : 35px;
-    padding-left: 12px;
-    margin-bottom: 18vh;
+    width      : 50px;
+    padding-left: 15px;
+    margin-bottom: 200px;
     border-top-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     border: 1px solid #d8a200;
