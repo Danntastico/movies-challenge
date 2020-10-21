@@ -3,6 +3,21 @@ import styled from 'styled-components'
 
 export const FormInline = styled(Form)`
     width: auto;
+
+    :active  {
+        border-color: transparent;
+        background-color: black;
+        color: white;
+    }
+    :focus  {
+        border-color: transparent;
+        background-color: black;
+        color: white;
+    }
+`
+
+export const Button = styled(Form)`
+    width: auto;
 `
 
 export const FormControlStyled = styled(FormControl)`
