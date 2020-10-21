@@ -13,22 +13,32 @@ export const FormControlStyled = styled(FormControl)`
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    ::placeholder { 
         color: white;
-        opacity: 1; /* Firefox */
+        opacity: 1; 
         font-size: 19px;
     }
 
+    :focus  {
+        border-color: transparent;
+        background-color: black;
+        color: white;
+    }
+    
     @media screen and (max-width: 613px) {
         width: 65%;
         padding: 6px 0 6px 0;
         font-size: 15px;
         text-align: center;
+
+        ::placeholder { 
+        font-size: 15px;
+        }
     }
 `
 
 export const BrandStyled = styled(NavbarBrand)`
-
+    
 `;
 
 export const NavbarStyled = styled(Navbar)`
@@ -36,9 +46,17 @@ export const NavbarStyled = styled(Navbar)`
     border-bottom: .05em solid rgba(216,162,0,0.65);
     justify-content: space-between;
 
-    input.yourclassname::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+    input.yourclassname::placeholder { 
+    color: white;
+    opacity: 1; 
+
+    :active  {
+        
+        border-color: transparent;
+        background-color: black;
+        color: white;
+    }
+    
 }
 
     @media(min-width: 768px){ 
@@ -48,6 +66,13 @@ export const NavbarStyled = styled(Navbar)`
 export const SearchIcon = styled.img`
     width: 35px;
     height: 35px;
+    :active  {
+        
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        
+    }
 `
 
 export const MainLogo = styled.img`

@@ -5,6 +5,14 @@ export const ButtonComp = styled(Button)`
     background-color: ${({customColor}) => customColor ? customColor : "transparent"};
     border: transparent;
 
+    :active  {
+        
+        border-color: transparent;
+        background-color: black;
+        color: white;
+        
+    }
+
     &:hover {
         background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor : "transparent"};
     }
