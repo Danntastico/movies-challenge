@@ -132,7 +132,7 @@ export const CardFooter = styled(Card.Footer)`
 export const CardParagraph = styled(Card.Text)`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size  : 10px;
+    font-size  : 12px;
     width      : 40%;
     padding: 4px 0px 4px 0px;
     margin: 0;
