@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { App } from '../App'
 import { Action } from 'views/Action'
 import { Adventure } from 'views/Adventure'
 import { Animation } from 'views/Animation'
