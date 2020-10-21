@@ -1,7 +1,19 @@
 import React, { FunctionComponent } from 'react'
 import { MainLogo, SearchIcon, FormInline, FormControlStyled, BrandStyled, NavbarStyled } from './NavbarStyles';
 import { Button } from 'components/button/Button';
+import { useInput } from 'hooks/useInput';
+import { useHistory } from "react-router-dom";
+
 export const Navbar: FunctionComponent = () => {
+    const history = useHistory();
+    const [ { description }, handleInputChange] = useInput({
+        description: '',
+    });
+    
+    const handleSubmit = (e:any) => {
+        e.preventDefault();
+    }
+
     return (
         <>
             <NavbarStyled >
