@@ -19,7 +19,7 @@ export const AppRouter = () =>(
     <Router>
         <div>
             <Switch>
-                <Route path="/">
+                <Route exact path="/">
                     <Top100 />
                 </Route>
                 <Route path="/action">
