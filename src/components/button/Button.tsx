@@ -9,21 +9,14 @@ interface ButtonProps {
     customTextHoverColor?: string;
 }
 
-export const Button: FunctionComponent<ButtonProps> = ({ 
+export const Button = ({ 
         onClick, 
-        children,
-        customColor, 
-        customHoverColor, 
-        customTextColor, 
-        customTextHoverColor }) => {
+        children}: ButtonProps) => {
+
     return (
         <>
             <ButtonComp 
-                onClick={onClick} 
-                customColor={customColor} 
-                customHoverColor={customHoverColor} 
-                customTextColor={customTextColor}
-                customTextHoverColor={customTextHoverColor}
+                onClick={onClick}
             >
                 { children }
             </ButtonComp>
