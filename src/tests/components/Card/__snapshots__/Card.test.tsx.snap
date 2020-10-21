@@ -2,57 +2,38 @@
 
 exports[`Unit Testing to CARD component Should render correctly 1`] = `
 <div
-  id="contenedorMovies"
+  className="sc-gtssRu gqeTD align-items-stretch col-lg-3 col-md-4 col-sm-6"
 >
   <div
-    className="sc-bdnylx fQnQY row"
+    className="sc-dlnjPT jvwfUd card"
   >
     <div
-      className="sc-gtssRu gqeTD align-items-stretch col-lg-3 col-md-4 col-sm-6"
+      className="sc-hKFyIo bIulTT card-body"
     >
       <div
-        className="sc-dlnjPT jvwfUd card"
+        className="sc-eCApGN jjpycP card-title h5"
       >
-        <div
-          className="sc-hKFyIo bIulTT card-body"
-        >
-          <div
-            className="sc-eCApGN jjpycP card-title h5"
-          >
-             
-            1
-             
-          </div>
-          <p
-            className="sc-jSFkmK EveGJ card-text"
-          >
-             
-            1
-             
-          </p>
-          <p
-            className="sc-gKAblj keoKAQ card-text"
-          >
-             
-            testTitle
-             
-          </p>
-          <div
-            className="sc-iCoHVE kcKcLJ card-footer"
-          >
-            <p
-              className="sc-fujyUd bgtJZd card-text"
-            >
-               Comedy 
-            </p>
-            <p
-              className="sc-fujyUd bgtJZd card-text"
-            >
-               Fantasy 
-            </p>
-          </div>
-        </div>
+         
+        1
+         
       </div>
+      <p
+        className="sc-jSFkmK EveGJ card-text"
+      >
+         
+        1
+         
+      </p>
+      <p
+        className="sc-gKAblj keoKAQ card-text"
+      >
+         
+        testTitle
+         
+      </p>
+      <div
+        className="sc-iCoHVE kcKcLJ card-footer"
+      />
     </div>
   </div>
 </div>

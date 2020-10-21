@@ -2,7 +2,7 @@
 
 exports[`Unit test on <Button /> should Render correctly 1`] = `
 <button
-  className="sc-bdnylx fCQhGE btn btn-primary"
+  className="sc-bdnylx ikQsUU btn btn-primary"
   disabled={false}
   onClick={[MockFunction]}
   type="button"
