@@ -9,7 +9,7 @@ export const Navbar: FunctionComponent = () => {
                     <MainLogo src="img/logo-test.png" alt="main-logo" loading="lazy" />
                 </BrandStyled>
                 <FormInline className="form-inline">
-                    <Button onClick={() => {}}>
+                    <Button onClick={() => {}} >
                         <SearchIcon src='img/iconSearch.svg' alt="search" />
                     </Button>
                     <FormControlStyled className="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search" />
