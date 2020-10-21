@@ -6,5 +6,7 @@ exports[`Unit test on <Button /> should Render correctly 1`] = `
   disabled={false}
   onClick={[MockFunction]}
   type="button"
-/>
+>
+  Test Btn
+</button>
 `;
