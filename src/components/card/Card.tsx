@@ -10,23 +10,21 @@ interface CardProps {
 export const Card: FunctionComponent<CardProps> = ({keyValue, rating, title}) => {
     return (
         <>
-            <div id="contenedorMovies">
-                <RowStyled >
-                    <ColStyled sm={6} md={4} lg={3} className="align-items-stretch">
-                        <CardStyled>    
-                            <CardBody >
-                                <CardTitle> { keyValue } </CardTitle>
-                                <CardRating> { rating } </CardRating>
-                                <CardText> { title } </CardText>
-                                <CardFooter>                                    
-                                    <CardParagraph> Comedy </CardParagraph>
-                                    <CardParagraph> Fantasy </CardParagraph>
-                                </CardFooter> 
-                            </CardBody>
-                        </CardStyled>
-                    </ColStyled>
-                </RowStyled >
-            </div>
+            <RowStyled >
+                <ColStyled sm={6} md={4} lg={3} className="align-items-stretch">
+                    <CardStyled>    
+                        <CardBody >
+                            <CardTitle> { keyValue } </CardTitle>
+                            <CardRating> { rating } </CardRating>
+                            <CardText> { title } </CardText>
+                            <CardFooter>                                    
+                                <CardParagraph> Comedy </CardParagraph>
+                                <CardParagraph> Fantasy </CardParagraph>
+                            </CardFooter> 
+                        </CardBody>
+                    </CardStyled>
+                </ColStyled>
+            </RowStyled >
         </>
     )
 }
