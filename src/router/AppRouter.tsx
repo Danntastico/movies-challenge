@@ -14,10 +14,14 @@ import { Documentary } from 'views/Documentary'
 import { Drama } from 'views/Drama'
 import { Fantasy } from 'views/Fantasy'
 import { Top100 } from 'views/Top100'
+import { Navbar } from 'components/navbar/Navbar';
+import HorizontalMenu from 'components/scrollmenu/HorizontalMenu';
 
 export const AppRouter = () =>(
     <Router>
         <div>
+            <Navbar />
+            <HorizontalMenu/>
             <Switch>
                 <Route exact path="/">
                     <Top100 />
