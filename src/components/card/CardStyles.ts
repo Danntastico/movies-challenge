@@ -1,5 +1,6 @@
 import { Col, Card } from 'react-bootstrap';
 import styled from 'styled-components';
+import { fadeIn } from 'styles/animation';
 
 export const CardHover = styled('span')`
     display: none;
@@ -25,7 +26,8 @@ export const ColStyled = styled(Col)`
     align-items: stretch;
 `;
 
-export const CardStyled = styled(Card)`
+export const CardStyled = styled(Card)<{imagePath: string}>`
+    ${fadeIn()}
     z-index         : 1;
     width           : 100%;
     cursor          : pointer;
@@ -34,7 +36,7 @@ export const CardStyled = styled(Card)`
     border          : 1px solid #d8a200;
     border-radius   : 20px;
     box-shadow      : 0 0.5px 5px 0 #d8a200, 0 0.5px 5px 0 #d8a200;
-    background-image: url('https://picsum.photos/600/500/?random');
+    background-image: ${({imagePath}) => imagePath && imagePath };
 
     &:hover {
         transform : scale(1.03);
