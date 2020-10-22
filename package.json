@@ -2,7 +2,6 @@
   "name": "wfh-challenge",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,6 +19,7 @@
     "react-dom": "^16.14.0",
     "react-google-font-loader": "^1.1.0",
     "react-horizontal-scrolling-menu": "^0.7.8",
+    "react-infinite-scroll-component": "^5.1.0",
     "react-leaf-carousel": "^2.0.3",
     "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.2.0",
