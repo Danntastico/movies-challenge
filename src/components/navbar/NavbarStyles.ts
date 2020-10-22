@@ -1,7 +1,7 @@
 import {  Form, NavbarBrand, Navbar, FormControl } from 'react-bootstrap';
 import styled from 'styled-components'
 
-export const FormInline = styled(Form)`
+export const FormInline = styled.form`
     width: auto;
 
     :active  {
