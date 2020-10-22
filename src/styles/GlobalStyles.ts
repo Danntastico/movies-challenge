@@ -72,7 +72,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #222222;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 22px;
+    border-radius: 36px;
     margin-top: 34px;
     -webkit-box-shadow: -1px 4px 5px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 5px -2px rgba(0,0,0,0.75);
