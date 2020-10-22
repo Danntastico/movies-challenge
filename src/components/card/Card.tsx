@@ -43,7 +43,7 @@ export const Card: FunctionComponent<CardProps> = ({keyValue, rating, title, chi
                         <CardBody >
                             <CardTitle> { keyValue } </CardTitle>
                             <CardHover> {movieInfo.description} </CardHover>
-                            <CardRating> { rating } </CardRating>
+                            <CardRating> { rating.toFixed(1) } </CardRating>
                             <CardText> { title } </CardText>
                             <CardFooter>                                    
                                 {children}
