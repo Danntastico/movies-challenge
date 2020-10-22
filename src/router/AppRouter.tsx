@@ -35,7 +35,7 @@ export const AppRouter = () =>(
                 <Route path="/animation">
                     <Animation />
                 </Route>
-                <Route path="/children">
+                <Route path="/childrens">
                     <Children />
                 </Route>
                 <Route path="/comedy">
