@@ -15,6 +15,12 @@ export const ButtonComp = styled(Button)<StyledButtonProps>`
         background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor : "transparent"};
     }
 
+    &:focus, &:active{
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #d8a200;
+    }
+
     @media screen and (max-width: 613px) {
         padding: 0 1px 0 1px;
     }

@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 
 export const GlobalStyle = createGlobalStyle` 
@@ -12,58 +12,58 @@ export const GlobalStyle = createGlobalStyle`
     }
 .menu-item {
     border-style: none;
-  padding: 0 40px;
-  margin: 5px 10px;
-  user-select: none;
-  cursor: pointer;
-  border: 1px transparent solid;
-  color: #A8A8A8;
-  font-family: 'Poppins';
-  font-size: 17px;
-  font-weight: 700;
-  padding: 0px 4px 0px 4px;
-  margin: 0px 4px 0px 4px;
+    padding: 0 40px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px transparent solid;
+    color: #A8A8A8;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0px 4px 0px 4px;
+    margin: 0px 4px 0px 4px;
 }
 .menu-item-wrapper {
     border-style: none;
-  border: 0px transparent solid;
-  background-color: #222222;
-  font-family: 'Poppins';
-  padding: 3px 18px 3px 18px;
+    border: 0px transparent solid;
+    background-color: #222222;
+    font-family: 'Poppins';
+    padding: 3px 18px 3px 18px;
+    border-style: none;
+    outline: none;
 }
 .menu-item-wrapper.active {
-
-  background-color: transparent;
-  border-style: none;
-  font-family: 'Poppins';
-  font-weight: 700;
+    background-color: transparent;
+    box-shadow: none;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 .menu-item.active {
-  border-style: none;
-  background-color: #D8A000;
-  color: black;
-  font-family: 'Poppins';
-  font-weight: 800;
-  border-radius: 21px;
-  border: 1px #FFC05A solid;
-  padding: 6px 20px 6px 20px;
+    border-style: none;
+    background-color: #D8A000;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 800;
+    border-radius: 21px;
+    border: 1px #FFC05A solid;
+    padding: 6px 20px 6px 20px;
 }
-
 .scroll-menu-arrow {
-  color: #D8A000;
-  padding: 20px;
-  margin-top: 34px;
-  cursor: pointer;
-  font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 32px;
+    color: #D8A000;
+    padding: 20px;
+    margin-top: 34px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .scroll-menu-arrow--disabled {
-  visibility: hidden;
-  background-color: black;
-  font-family: 'Poppins';
-  font-weight: 700;
+    visibility: hidden;
+    background-color: black;
+    font-family: 'Poppins';
+    font-weight: 700;
  
 }
 
