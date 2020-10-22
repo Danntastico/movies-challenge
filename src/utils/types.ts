@@ -18,7 +18,6 @@ export interface TMDBMovieImages {
 }
 
 export interface TMDBMovieInformation {
-    popularity: number;
     vote_count: number;
     video: boolean;
     poster_path: string;
@@ -94,4 +93,13 @@ export interface DatasetLinks {
     movieId: number;
     imdbId: number;
     tmdbId: number;
+}
+
+export interface DatasetMovieResponse {
+    movieId: number;
+    tmdbId: number;
+    title: string;
+    genres: string;
+    rating: number;
+    tag: string;
 }

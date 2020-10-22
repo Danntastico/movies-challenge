@@ -1,0 +1,1 @@
+export const splitGenders = (genders: string) => { return genders.split("|"); };
