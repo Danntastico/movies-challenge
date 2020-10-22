@@ -16,7 +16,7 @@ export const Button = ({
 
     return (
         <>
-            <ButtonComp variant="link" className="sticky-top" 
+            <ButtonComp variant="link"
                 onClick={onClick}
                 type={type}
             >
