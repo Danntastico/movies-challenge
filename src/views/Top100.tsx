@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Card } from 'components/card/Card';
 import { MovieContainer } from 'components/movieContainer/MovieContainer';
 import { ApiDS } from 'utils/services/ApiDataSets';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { DatasetMovieResponse } from 'utils/types';
 import { CardParagraph } from 'components/card/CardStyles'
 import { splitGenders } from 'utils/utilities';
@@ -27,18 +26,9 @@ export const Top100 = () => {
         }
         getAllMovies()
     }, [api])
-    const fetchMoreData = () => {
-        
-    }
-
+ 
     return (
         <>
-            <InfiniteScroll
-                dataLength={data.responseAll.length}
-                next={fetchMoreData}
-                hasMore={true || false}
-                loader={<h1 style={{backgroundColor: 'white'}} >Loading...</h1>}
-                >
                 <MovieContainer>
                     {!!data.response20 && 
                         data?.response20.map( (i, index) => {
@@ -54,7 +44,6 @@ export const Top100 = () => {
                             }
                         )}
                 </MovieContainer>
-            </InfiniteScroll>
             <TopButton></TopButton>
         </>
     )

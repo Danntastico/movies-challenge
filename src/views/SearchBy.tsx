@@ -2,7 +2,6 @@ import React, { FunctionComponent, useEffect, useState } from 'react'
 import { Card } from 'components/card/Card';
 import { MovieContainer } from 'components/movieContainer/MovieContainer';
 import { ApiDS } from 'utils/services/ApiDataSets';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { DatasetMovieResponse } from 'utils/types';
 import { CardParagraph } from 'components/card/CardStyles'
 import { splitGenders } from 'utils/utilities';
@@ -41,20 +40,11 @@ export const SearchBy:FunctionComponent = () => {
         }
     }, [api]);
 
-    const fetchMoreData = () => {
-        
-    }
-
+ 
     return (
         <>
             <h1>Search a Movie</h1>
             <h3>Showing results for: {location.state}</h3>
-            <InfiniteScroll
-                dataLength={data.response20.length}
-                next={fetchMoreData}
-                hasMore={true || false}
-                loader={<h1 style={{backgroundColor: 'white'}} >Loading...</h1>}
-                >
                 <MovieContainer>
                     {!!data.response20 && 
                         data?.response20.map( (i, index) => {
@@ -75,7 +65,6 @@ export const SearchBy:FunctionComponent = () => {
                             }
                         )}
                 </MovieContainer>
-            </InfiniteScroll>
         </>
     )
 }
