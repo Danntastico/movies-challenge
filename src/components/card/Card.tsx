@@ -41,8 +41,9 @@ export const Card: FunctionComponent<CardProps> = ({keyValue, rating, title, chi
                 {
                     <CardStyled $imgPath={movieInfo.path}>    
                         <CardBody >
-                            <CardTitle> { keyValue } </CardTitle>
-                            <CardHover> {movieInfo.description} </CardHover>
+                            <CardTitle> <h5>{ keyValue }</h5>
+                            <CardHover> {movieInfo.description} </CardHover> 
+                            </CardTitle>
                             <CardRating> { rating.toFixed(1) } </CardRating>
                             <CardText> { title } </CardText>
                             <CardFooter>                                    

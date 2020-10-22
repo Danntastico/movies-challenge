@@ -3,22 +3,21 @@ import styled from 'styled-components';
 import { fadeIn } from 'styles/animation';
 
 export const CardHover = styled('span')`
-    display: none;
+
+    display: flex;
+    visibility: hidden;
     width: 95%;
     height: fit-content;
-    margin: -200px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding-left: 5%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 11.5px;
-
-    @media screen and (max-width: 768px) {
-        font-size  : 10px;
-        width: 97%;
-        padding-left: 3%;
-        margin: -180px auto 0 auto;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const ColStyled = styled(Col)`
@@ -45,7 +44,8 @@ export const CardStyled = styled(Card)<{$imgPath: string}>`
     }
 
     &:hover span{
-        display: block;
+        visibility: visible;
+        height: fit-content;
         position: absolute;
         z-index: 2;
     }
@@ -103,15 +103,14 @@ export const CardTitle = styled(Card.Title)`
     padding-top: 10px;
     text-align: center;
     align-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
+    
     border-top-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
     border: 1px solid #d8a200;
     background-color: rgba(49, 44, 25, 0.7);
 
-    @media screen and (max-width: 768px) {
-        margin-bottom: 150px;
-    }
+    
 `;
 
 export const CardRating = styled(Card.Text)`
@@ -161,7 +160,7 @@ export const CardParagraph = styled(Card.Text)`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size  : 12px;
-    width      : 40%;
+    width      : 48%;
     padding: 4px 0px 4px 0px;
     margin: 0;
     border-radius: 10px;

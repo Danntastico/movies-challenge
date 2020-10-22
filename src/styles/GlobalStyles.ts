@@ -90,5 +90,22 @@ export const GlobalStyle = createGlobalStyle`
     margin-right: 3%; 
 }
 
+h1{
+    width: 85%;
+    margin: 10px auto;
+    color: #d8a200;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size  : 14.5px;
+}
+
+h3{
+    width: 85%;
+    margin: auto;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size  : 12px;
+}
 
 `
