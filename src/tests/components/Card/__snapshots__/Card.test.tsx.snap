@@ -2,21 +2,28 @@
 
 exports[`Unit Testing to CARD component Should render correctly 1`] = `
 <div
-  className="sc-gtssRu gqeTD align-items-stretch col-lg-3 col-md-4 col-sm-6"
+  className="sc-gtssRu hYJaBj col-lg-3 col-md-4 col-sm-6"
 >
   <div
-    className="sc-dlnjPT jvwfUd card"
+    className="sc-dlnjPT fcZHye card"
+    imagePath=""
   >
     <div
-      className="sc-hKFyIo bIulTT card-body"
+      className="sc-hKFyIo kKcejx card-body"
     >
       <div
-        className="sc-eCApGN jjpycP card-title h5"
+        className="sc-eCApGN kHFkYW card-title h5"
       >
          
         1
          
       </div>
+      <span
+        className="sc-bdnylx jrXTCF"
+      >
+         
+         
+      </span>
       <p
         className="sc-jSFkmK EveGJ card-text"
       >
@@ -33,7 +40,9 @@ exports[`Unit Testing to CARD component Should render correctly 1`] = `
       </p>
       <div
         className="sc-iCoHVE kcKcLJ card-footer"
-      />
+      >
+        category
+      </div>
     </div>
   </div>
 </div>
