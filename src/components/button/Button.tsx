@@ -10,9 +10,9 @@ interface ButtonProps {
     customTextHoverColor?: string;
 }
 
-export const Button = ({ 
+export const Button: FunctionComponent<ButtonProps> = ({ 
         onClick, 
-        children, type}: ButtonProps) => {
+        children, type} ) => {
 
     return (
         <>

@@ -56,7 +56,6 @@ class ApiTheMovieDB {
             return movie.poster_path;
         } catch (error) {
             console.log(error)
-            return '';
         }
     }
     async getMovieDescription(movieID: number) {

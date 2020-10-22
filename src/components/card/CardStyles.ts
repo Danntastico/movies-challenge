@@ -26,7 +26,7 @@ export const ColStyled = styled(Col)`
     align-items: stretch;
 `;
 
-export const CardStyled = styled(Card)<{imagePath: string}>`
+export const CardStyled = styled(Card)<{$imgPath: string}>`
     ${fadeIn()}
     z-index         : 1;
     width           : 100%;
@@ -36,7 +36,7 @@ export const CardStyled = styled(Card)<{imagePath: string}>`
     border          : 1px solid #d8a200;
     border-radius   : 20px;
     box-shadow      : 0 0.5px 5px 0 #d8a200, 0 0.5px 5px 0 #d8a200;
-    background-image: ${({imagePath}) => imagePath && imagePath };
+    background-image: ${props => props.$imgPath || "url('https://picsum.photos/600/500/?random')"};
 
     &:hover {
         transform : scale(1.03);

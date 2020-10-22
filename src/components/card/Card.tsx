@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { ApiTMDB } from 'utils/services/ApiTheMovieDB';
-import { ColStyled, CardStyled, CardBody, CardTitle, CardRating, CardText, CardFooter, CardParagraph, CardHover} from './CardStyles';
+import { ColStyled, CardStyled, CardBody, CardTitle, CardRating, CardText, CardFooter, CardHover} from './CardStyles';
 
 interface CardProps {
     keyValue: number;
@@ -22,7 +22,7 @@ export const Card: FunctionComponent<CardProps> = ({keyValue, rating, title, chi
                 const path = await apiTMDB.getOneMoviePoster(tmdbID);
                 const movie_description = await apiTMDB.getMovieDescription(tmdbID);
                 setMovieInfo({
-                    path: `url('https://image.tmdb.org/t/p/w500${path}')` as string,
+                    path: !!path ? `url('https://image.tmdb.org/t/p/w500${path}')` as string : '',
                     description: movie_description as string,
                 }); 
             } catch {
@@ -38,8 +38,8 @@ export const Card: FunctionComponent<CardProps> = ({keyValue, rating, title, chi
     return (
         <>
             <ColStyled sm={6} md={4} lg={3}>
-                {  movieInfo.description && 
-                    <CardStyled imagePath={movieInfo.path}>    
+                {
+                    <CardStyled $imgPath={movieInfo.path}>    
                         <CardBody >
                             <CardTitle> { keyValue } </CardTitle>
                             <CardHover> {movieInfo.description} </CardHover>
