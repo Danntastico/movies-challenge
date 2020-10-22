@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'components/card/Card';
 import { MovieContainer } from 'components/movieContainer/MovieContainer';
+import { TopButton } from 'components/top/top';
 
 export const Top100 = () => {
     return (
@@ -18,6 +19,7 @@ export const Top100 = () => {
                 <Card title="Test movie1" rating="5.9" keyValue="10" description="Perro hpta"/>
                 <Card title="Test movie1" rating="5.9" keyValue="11" description="Perro hpta"/>
             </MovieContainer>
+            <TopButton></TopButton>
         </>
     )
 }
