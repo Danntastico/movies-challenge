@@ -49,8 +49,8 @@ export const Adventure = () => {
                                 keyValue={index + 1}
                                 tmdbID={i.tmdbId}>
                                 {
-                                    splitGenders(i.genres).map(genre => 
-                                        <CardParagraph>
+                                    splitGenders(i.genres).map((genre, index) => 
+                                        <CardParagraph key={index}>
                                             {genre}
                                         </CardParagraph>
                                     ).slice(0, 2)

@@ -43,8 +43,8 @@ export const Top100 = () => {
                         data?.response20.map( (i, index) => {
                             return <Card title={i.title} rating={i.rating} key={i.movieId} keyValue={index + 1}tmdbID={i.tmdbId}>
                                 {
-                                    splitGenders(i.genres).map(genre => 
-                                        <CardParagraph>
+                                    splitGenders(i.genres).map((genre, index) => 
+                                      <CardParagraph key={index}>
                                             {genre}
                                         </CardParagraph>
                                     ).slice(0, 2)
