@@ -16,7 +16,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
 
     return (
         <>
-            <ButtonComp 
+            <ButtonComp variant="link"
                 onClick={onClick}
                 type={type}
             >

@@ -34,10 +34,12 @@ export const FormControlStyled = styled(FormControl)`
         font-size: 19px;
     }
 
-    :focus  {
-        border-color: transparent;
+    &:focus, &:active{
+        outline: none;
+        box-shadow: none;
         background-color: black;
         color: white;
+        border-bottom: 2px solid #d8a200;
     }
     
     @media screen and (max-width: 613px) {

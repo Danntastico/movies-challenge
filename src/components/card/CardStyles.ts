@@ -97,9 +97,12 @@ export const CardBody = styled(Card.Body)`
 export const CardTitle = styled(Card.Title)`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size  : 25px;
-    width      : 50px;
-    padding-left: 15px;
+    font-size  : 22px;
+    width      : 36px;
+    height     : 50px;
+    padding-top: 10px;
+    text-align: center;
+    align-content: center;
     margin-bottom: 200px;
     border-top-left-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
