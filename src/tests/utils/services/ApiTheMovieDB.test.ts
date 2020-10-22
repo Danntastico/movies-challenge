@@ -30,7 +30,7 @@ describe('Unit test to the ApiTheMovieDB', () => {
     });
 
     test('Testing response from getMovie()s method', async () => {
-        const getMovie = await api.getMovie('157336') as TMDBGetMovieResponse;
+        const getMovie = await api.getMovie(157336) as TMDBGetMovieResponse;
 
         expect(typeof getMovie.title).toBe('string');
         expect(typeof getMovie.id).toBe('number');
