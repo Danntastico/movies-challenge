@@ -3,6 +3,7 @@ import { ButtonComp } from './ButtonStyles';
 interface ButtonProps {
     onClick: () => void;
     children: any;
+    type?: string,
     customColor?:string;
     customHoverColor?: string;
     customTextColor?:string;
@@ -11,19 +12,13 @@ interface ButtonProps {
 
 export const Button: FunctionComponent<ButtonProps> = ({ 
         onClick, 
-        children,
-        customColor, 
-        customHoverColor, 
-        customTextColor, 
-        customTextHoverColor }) => {
+        children, type} ) => {
+
     return (
         <>
-            <ButtonComp 
-                onClick={onClick} 
-                customColor={customColor} 
-                customHoverColor={customHoverColor} 
-                customTextColor={customTextColor}
-                customTextHoverColor={customTextHoverColor}
+            <ButtonComp variant="link"
+                onClick={onClick}
+                type={type}
             >
                 { children }
             </ButtonComp>

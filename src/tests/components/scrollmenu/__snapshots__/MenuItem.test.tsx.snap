@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit tests on MenuItem Should render correctly  1`] = `
+<div
+  className="menu-item active"
+>
+  Test text
+</div>
+`;

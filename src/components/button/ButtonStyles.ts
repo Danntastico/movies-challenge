@@ -9,9 +9,16 @@ interface StyledButtonProps {
 
 export const ButtonComp = styled(Button)<StyledButtonProps>`
     background-color: ${({customColor}) => customColor ? customColor : "transparent"};
+    border: transparent;
 
     &:hover {
         background-color: ${({customHoverColor}) => customHoverColor ? customHoverColor : "transparent"};
+    }
+
+    &:focus, &:active{
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #d8a200;
     }
 
     @media screen and (max-width: 613px) {

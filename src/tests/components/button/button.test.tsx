@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 
 describe('Unit test on <Button />', () => {
     const onCLickButtonHandler = jest.fn();
-    let wrapper = mount(<Button onClick={onCLickButtonHandler} textLabel="Test Btn" />)
+    let wrapper = mount(<Button onClick={onCLickButtonHandler} children="Test Btn" />)
 
     test('should Render correctly', () => {
         expect(wrapper).toMatchSnapshot();
